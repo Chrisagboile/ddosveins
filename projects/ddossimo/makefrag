@@ -1,0 +1,10 @@
+# Use the new message compiler introduced in OMNeT++ 5.3
+MSGC := $(MSGC) --msg6
+
+ifeq ($(PLATFORM), win32x86_64)
+# for windows
+LIBS += -lws2_32
+DEFINES += -DINET_EXPORT
+ENABLE_AUTO_IMPORT = -WI,--enable-auto-import
+LDFLAGS := $(filter-out $(ENABLE_AUTO_IMPORT),$(LDFLAGS))
+endif

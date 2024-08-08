@@ -1,0 +1,11 @@
+E # 0 t 0 m 1 ce -1 msg -1
+SB v 1287 rid General-0-20240705-09:19:51-2187 b 1000
+KF p -1 c "" s ""
+MC id 1 c omnetpp::cModule t ddossimo.simulations.ddosattack.V2XNetwork n V2XNetwork cm 1
+MS id 1 d ""
+MC id 2 c omnetpp::cModule t org.car2x.veins.nodes.RSU pid 1 n rsu[0] cm 1
+GC m 2 g 0 n veinsradioIn o 0
+MS id 2 d p=100,100
+MC id 3 c omnetpp::cModule t ddossimo.simulations.ddosattack.Car pid 1 n car[0] cm 1
+GC m 3 g 0 n veinsradioIn o 0
+GC m 3 g 5 n out o 1

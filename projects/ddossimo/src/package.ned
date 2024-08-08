@@ -1,0 +1,3 @@
+package ddossimo;
+
+@license(LGPL);

@@ -1,0 +1,147 @@
+file 6323 1722863846                                            
+version 2
+run attack-0-20240805-12:50:29-2411
+attr configname attack
+attr datetime 20240805-12:50:29
+attr experiment attack
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network ddossimo.simulations.RSUmessage.RSUExampleScenario
+attr processid 2411
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.attacker.attackInterval 0.1s
+param *.car[*].numAttackPackets 1000
+param *.car[*].attackInterval 0.1s
+param *.car[*].attackReady true
+param *.car[5].numAttackPackets 1000
+param *.car[5].attackInterval 0.1s
+param **.car[*].pdrSignal.statistics true
+param **.car[*].delaySignal.statistics true
+param **.car[*].throughputSignal.statistics true
+param **.car[*].collisionRateSignal.statistics true
+param **.node[*].pdrSignal.statistics true
+param **.node[*].delaySignal.statistics true
+param **.node[*].throughputSignal.statistics true
+param **.node[*].collisionRateSignal.statistics true
+param **.rsu[*].pdrSignal.statistics true
+param **.rsu[*].delaySignal.statistics true
+param **.rsu[*].throughputSignal.statistics true
+param **.rsu[*].collisionRateSignal.statistics true
+param *.playgroundSizeX 4705m
+param *.playgroundSizeY 3350m
+param *.playgroundSizeZ 50m
+param *.annotations.draw true
+param *.obstacles.obstacles "xmldoc(\"config.xml\", \"//AnalogueModel[@type='SimpleObstacleShadowing']/obstacles\")"
+param *.manager.updateInterval 1s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"bristol.launchd.xml\")"
+param *.rsu[0].mobility.x 2000
+param *.rsu[0].mobility.y 2000
+param *.rsu[0].mobility.z 3
+param *.rsu[*].applType "\"TraCIDemoRSU11p\""
+param *.rsu[*].appl.headerLength "80 bit"
+param *.rsu[*].appl.sendBeacons false
+param *.rsu[*].appl.dataOnSch false
+param *.rsu[*].appl.beaconInterval 1s
+param *.rsu[*].appl.beaconUserPriority 7
+param *.rsu[*].appl.dataUserPriority 5
+param *.rsu[*].nic.phy80211p.antennaOffsetZ "0 m"
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel false
+param *.**.nic.mac1609_4.txPower 20mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.minPowerLevel -110dBm
+param *.**.nic.phy80211p.useNoiseFloor true
+param *.**.nic.phy80211p.noiseFloor -98dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+param *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+param *.node[*].applType "\"TraCIDoSmo11p\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.messageContent "\"startAttack\""
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 0
+param *.node[*].veinsmobility.setHostSpeed false
+param *.node[*0].veinsmobility.accidentCount 1
+param *.node[*0].veinsmobility.accidentStart 120s
+param *.node[*0].veinsmobility.accidentDuration 50s
+param *.numCars 20
+
+vector 0 RSUExampleScenario.node[0].veinsmobility posx ETV
+vector 1 RSUExampleScenario.node[0].veinsmobility posy ETV
+vector 2 RSUExampleScenario.node[1].veinsmobility posx ETV
+vector 3 RSUExampleScenario.node[1].veinsmobility posy ETV
+vector 4 RSUExampleScenario.node[2].veinsmobility posx ETV
+vector 5 RSUExampleScenario.node[2].veinsmobility posy ETV
+vector 6 RSUExampleScenario.node[3].veinsmobility posx ETV
+vector 7 RSUExampleScenario.node[3].veinsmobility posy ETV
+vector 8 RSUExampleScenario.node[4].veinsmobility posx ETV
+vector 9 RSUExampleScenario.node[4].veinsmobility posy ETV
+vector 10 RSUExampleScenario.node[5].veinsmobility posx ETV
+vector 11 RSUExampleScenario.node[5].veinsmobility posy ETV
+vector 12 RSUExampleScenario.node[6].veinsmobility posx ETV
+vector 13 RSUExampleScenario.node[6].veinsmobility posy ETV
+vector 14 RSUExampleScenario.node[7].veinsmobility posx ETV
+vector 15 RSUExampleScenario.node[7].veinsmobility posy ETV
+vector 16 RSUExampleScenario.node[8].veinsmobility posx ETV
+vector 17 RSUExampleScenario.node[8].veinsmobility posy ETV
+vector 18 RSUExampleScenario.node[9].veinsmobility posx ETV
+vector 19 RSUExampleScenario.node[9].veinsmobility posy ETV
+vector 20 RSUExampleScenario.node[0].veinsmobility speed ETV
+vector 21 RSUExampleScenario.node[1].veinsmobility speed ETV
+vector 22 RSUExampleScenario.node[2].veinsmobility speed ETV
+vector 23 RSUExampleScenario.node[3].veinsmobility speed ETV
+vector 24 RSUExampleScenario.node[4].veinsmobility speed ETV
+vector 25 RSUExampleScenario.node[5].veinsmobility speed ETV
+vector 26 RSUExampleScenario.node[6].veinsmobility speed ETV
+vector 27 RSUExampleScenario.node[7].veinsmobility speed ETV
+vector 28 RSUExampleScenario.node[8].veinsmobility speed ETV
+vector 29 RSUExampleScenario.node[9].veinsmobility speed ETV
+0	5164 45 2 13 1 2 2 3317.6974435821 3321.1497196999 6638.8471632819 22037151.787813
+1	5209 45 2 13 1 2 2 550.37805625736 555.22007522392 1105.5981314813 611185.33674129
+2	5254 45 2 13 1 2 2 3131.7773313199 3133.5092980678 6265.2866293877 19626909.774047
+3	5299 45 2 13 1 2 2 917.83876565813 917.93070957191 1835.76947523 1685024.78732
+4	5344 45 2 13 1 2 2 739.63611667643 740.34755860859 1479.983675285 1095176.0926299
+5	5389 45 2 13 1 2 2 1908.1697892473 1910.4715131454 3818.6413023927 7291013.3471362
+6	5434 45 2 13 1 2 2 1879.8388018725 1886.6471631102 3766.4859649827 7093231.4390971
+7	5479 45 2 13 1 2 2 2656.1954913976 2662.0267620547 5318.2222534523 14141760.970417
+8	5524 44 2 13 1 2 2 3241.275676909 3242.5221394192 6483.7978163282 21019817.838345
+9	5568 45 2 13 1 2 2 2330.2128008043 2332.0916150269 4662.3044158312 10868542.997911
+10	5613 47 2 13 1 2 2 1551.4174881336 1551.4637777569 3102.8812658905 4813936.0761784
+11	5660 47 2 13 1 2 2 515.63977996976 518.04983423985 1033.6896142096 534260.01344319
+12	5707 47 2 13 1 2 2 3384.4538470488 3386.1166151347 6770.5704621834 22920313.574094
+13	5754 47 2 13 1 2 2 2167.4674138553 2168.6201787654 4336.0875926207 9400828.4698729
+14	5801 47 2 13 1 2 2 889.52466346458 891.72117163321 1781.2458350978 1586420.7748507
+15	5848 47 2 13 1 2 2 1966.2266842408 1966.7090168825 3932.9357011233 7733991.7309074
+16	5895 47 2 13 1 2 2 1499.6000040998 1500.2811651673 2999.8811692671 4499643.7468518
+17	5942 47 2 13 1 2 2 1401.7987669116 1404.6085563151 2806.4073232267 3937964.9793885
+18	5989 47 2 13 1 2 2 834.60253726576 836.47556257976 1671.0780998455 1396252.7620036
+19	6036 47 2 13 1 2 2 760.20775908695 761.66779345798 1521.8755525449 1158053.6645672
+20	6083 23 13 13 2 2 1 3.823456507944 3.823456507944 3.823456507944 14.618819668139
+21	6106 24 13 13 2 2 1 3.5494577054596 3.5494577054596 3.5494577054596 12.598650002847
+22	6130 24 13 13 2 2 1 3.5225016430937 3.5225016430937 3.5225016430937 12.408017825598
+23	6154 24 13 13 2 2 1 3.6257173583215 3.6257173583215 3.6257173583215 13.145826362434
+24	6178 24 13 13 2 2 1 3.5635808933811 3.5635808933811 3.5635808933811 12.699108783671
+25	6202 24 13 13 2 2 1 3.6742565394753 3.6742565394753 3.6742565394753 13.500161117877
+26	6226 24 13 13 2 2 1 3.7140622864099 3.7140622864099 3.7140622864099 13.794258667332
+27	6250 24 13 13 2 2 1 3.6250404470836 3.6250404470836 3.6250404470836 13.140918242992
+28	6274 24 13 13 2 2 1 3.9981468017583 3.9981468017583 3.9981468017583 15.98517784841
+29	6298 24 13 13 2 2 1 3.5062234341566 3.5062234341566 3.5062234341566 12.293602770229
+
