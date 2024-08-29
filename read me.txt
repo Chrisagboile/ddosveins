@@ -1,0 +1,29 @@
+Steps to use this code
+
+1. Download Instant Veins
+Visit the Instant Veins download page and download the latest version of Instant Veins.
+The file will be in .ova format, which is a standard format for virtual machine images.
+2. Install VirtualBox
+Instant Veins runs as a virtual machine, so you need to install VirtualBox on your system.
+Download and install VirtualBox from the official website.
+Follow the installation instructions specific to your operating system.
+3. Import the Instant Veins Virtual Machine
+Open VirtualBox.
+Go to File > Import Appliance....
+Select the .ova file you downloaded and click Next.
+Review the settings and click Import to start the process.
+The import may take some time, depending on your system’s performance.
+4. Configure the Virtual Machine (Optional)
+Once imported, you can adjust the virtual machine’s settings, such as memory allocation and CPU cores, by right-clicking on the machine in VirtualBox and selecting Settings.
+Adjust these settings to optimize the performance based on your system’s resources.
+5. Start the Virtual Machine
+After configuring, start the Instant Veins virtual machine by selecting it and clicking Start.
+The virtual machine will boot up into a Linux environment pre-configured with Veins, OMNeT++, and SUMO.
+6. Using Instant Veins
+Once the virtual machine is running, open OMNeT++ from the desktop or the applications menu.
+You’ll find the Veins project already set up and ready to use.
+7. goto src/veins/modules/application/traci
+8. download the my veins project
+9. copy the files in sources_code to traci
+10. start the simulation
+By following these steps, you should have a fully functional DDoS Veins environment ready for vehicular network simulations.
